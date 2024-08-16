@@ -68,7 +68,87 @@
 .dropdown-container:hover .dropdown-content{
     display: block;
 }
+
+@media screen and (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        max-width: 100%;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .logo{
+        padding: 10px 30px 10px;
+    }
+    
+    .logo img{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .list-item{
+        display: inline;
+        box-sizing: border-box;
+    }
+
+    .list-item a{
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 20px 0px;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: rgb(165, 255, 255);
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .list-item a:hover{
+        background-color: aqua;
+    }
+    
+    .dropdown-container{
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: block;
+        color: black;
+        position: relative;
+
+    }
+    
+    .dropdown-content{
+        width: 100%;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 58px;
+        
+    }
+    
+    .dropdown-content a{
+        text-decoration: none;
+        display: block;
+        padding: 20px 0px;
+        font-size: 1.2rem;
+        color: black;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .dropdown-container:hover .dropdown-content{
+        display: block;
+    }
+}
+
 /* End header section */
+
 
 /* Start background image section */
 .bg-img{
@@ -114,6 +194,19 @@
 .bg-img button:hover{
     color: rgb(255, 255, 255);
     background-color: aqua;
+}
+@media screen and (max-width:600px) {
+    .bg-img{
+        width: 600px;
+        height: 500px;
+        background-position: center;
+    }
+    .bg-img h1{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px 40px;
+        font-size: 3rem;
+        color: white;
+    }
 }
 /* End Background image section */
 
@@ -176,6 +269,26 @@
     padding-right: 15px;
 }
 
+@media screen and ( max-width: 600px) {
+    .first-content{
+        display: block;
+        width: 100%;
+    }
+
+    .fc-1{
+        width: 100%;
+        padding: 20px;
+        border: 1px solid whitesmoke;
+        background-color: whitesmoke;
+        box-shadow: 5px 5px 10px rgb(131, 131, 131);
+        border-radius: 10px;
+    }
+    .fc-1 h1{
+        margin-top: 10px;
+    }
+}
+
+
 /* Content Section End */
 
 /* Content section Two start */
@@ -202,6 +315,18 @@
     opacity: .5;
     font-weight: normal;
 }
+
+@media screen and (max-width:600px) {
+    .second-content{
+        width: 100%;
+    }
+    .second-content p{
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+}
+
 
 /* Content section two End */
 
@@ -314,6 +439,15 @@
     font-weight: bold; 
 }
 
+@media screen and (max-width:600px) {
+    .card{
+        max-width: 100%;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 /* card section end */
 
 /* Testimonial Section Start */
@@ -359,6 +493,23 @@
     font-family: sans-serif;
     opacity: .7;
 }
+
+@media screen and (max-width:600px) {
+    .testimonial{
+        max-width: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -60px;
+    }
+    .testimonial p{
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+
+
 
 /* Testimonial Section End */
 
@@ -414,8 +565,19 @@
     font-size: 1.2rem;
     text-decoration: none;
     margin-top: 20px;
-    
 }
+
+@media screen and (max-width:600px) {
+    .service-section{
+        display: block;
+        width: 80%;
+    }
+    .service-section .services{
+        margin-bottom: 50px;
+    }
+}
+
+
 /* Service Section End */
 
 /* Team Members section start */
@@ -471,6 +633,21 @@
     padding-right: 5px;
     color: rgb(34, 31, 31);
 }
+
+@media screen and (max-width:600px) {
+    .team-members-section{
+        width: 100%;
+        display: block;
+    }
+    .team-members-section .member1{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .our-team{
+        color: aqua;
+    }
+}
+
 
 /* Team members section end */
 
@@ -568,6 +745,26 @@
 .address-section div p{
     margin-top: 10px;
 }
+
+@media screen and (max-width:600px) {
+    .contact-section{
+        display: block;
+        width: 100%;
+    }
+    .contact-section .contact-form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .contact-us{
+        margin-top: 0px;
+        color: aqua;
+    }
+    .address-section{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
 
 /* Contact section end */
 
@@ -677,6 +874,7 @@ footer{
     background-color: transparent;
     border: 1px solid rgb(128, 127, 127);
     border-radius: 20px;
+    color: white;
 }
 .subscribe #send{
     float: right;
@@ -686,7 +884,12 @@ footer{
     border-radius: 15px;
     color: rgb(189, 189, 189);
     border: none;
+}
 
+.subscribe #send:hover{
+    background-color: aqua;
+    color: whitesmoke;
+    box-shadow: 5px 5px 20px aqua;
 }
 
 .hr-rull{
@@ -707,4 +910,50 @@ footer{
     color: aqua;
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 600px) {
+    footer {
+        height: auto; 
+        padding-bottom: 20px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        padding-top: 5%;
+    }
+
+    .footer-section > div {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .subscribe #email {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .subscribe #send {
+        width: 40%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hr-rull {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .copyright {
+        margin-top: 30px;
+        font-size: 0.9rem;
+    }
+
+    .copyright span {
+        font-size: 1.2rem;
+    }
+}
+
+
 /* Footer Section End */
